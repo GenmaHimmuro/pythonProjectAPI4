@@ -31,6 +31,7 @@ pip install -r requirements.txt
 - `TELEGRAM_TOKEN`
 - `ID_TELEGRAM_BOT`
 - `CHAT_ID`
+- `IMAGE_COUNT_APOD`,`IMAGE_COUNT_EPIC`_- необходимое количество снимков_
 
 ## Запустите бота
 - Через командную строку командой `cd` перейдите в папку с ботом
