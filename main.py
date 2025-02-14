@@ -6,7 +6,7 @@ from environs import env
 from fetch_spacex_image import get_image_spacex_last_launch
 from fetch_apod_nasa_image import get_apod_nasa_image
 from fetch_epic_nasa_image import get_epic_nasa_image
-from send_image_to_tg_channel import send_image_to_tg_channel
+from send_images_to_tg_channel import send_images_to_tg_channel
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
     get_apod_nasa_image(api_key_nasa,image_count_apod)
     get_epic_nasa_image(api_key_nasa,image_count_epic)
     bot = telegram.Bot(token=telegram_token)
-    send_image_to_tg_channel(directory, bot, chat_id, time_interval_for_send)
+    send_images_to_tg_channel(directory, bot, chat_id, time_interval_for_send)
 
 
 if __name__ == '__main__':
