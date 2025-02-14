@@ -2,10 +2,7 @@ import requests
 import os
 import datetime
 
-
-def save_image(file_path, image_data):
-    with open(file_path, 'wb') as file:
-        file.write(image_data)
+from tools.download_image import save_image
 
 
 def get_epic_nasa_image(api_key_nasa, image_count_epic):
