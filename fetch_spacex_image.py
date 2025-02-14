@@ -1,10 +1,7 @@
 import requests
 import os
 
-
-def save_image(file_path, image_data):
-    with open(file_path, 'wb') as file:
-        file.write(image_data)
+from tools.download_image import save_image
 
 
 def get_image_spacex_last_launch(id_launch_spacex):
