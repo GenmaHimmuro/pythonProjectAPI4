@@ -2,7 +2,7 @@ import requests
 import os
 import datetime
 
-from tools.download_image import save_image
+from download_tools.download_image import save_image
 
 
 def get_epic_nasa_image(api_key_nasa, image_count_epic):
