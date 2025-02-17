@@ -1,7 +1,7 @@
 import requests
 import os
 
-from tools.download_image import save_image
+from download_tools.download_image import save_image
 
 
 def get_apod_nasa_image(api_key_nasa, image_count_apod):
