@@ -1,7 +1,7 @@
 import requests
 import os
 
-from tools.download_image import save_image
+from download_tools.download_image import save_image
 
 
 def get_image_spacex_last_launch(id_launch_spacex):
@@ -14,4 +14,5 @@ def get_image_spacex_last_launch(id_launch_spacex):
         filename = 'spacex_{}.jpeg'.format(ind)
         file_path = os.path.join('images', filename)
         response = requests.get(picture)
+        response.raise_for_status()
         save_image(file_path, image_data=response.content)
